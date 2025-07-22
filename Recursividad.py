@@ -39,5 +39,16 @@ elif opcion == "3":
     print("Código en proceso...")
 elif opcion == "4":
     def conteo(letra, palabra):
-        if palabra == ' ':
+        if not palabra:
             return 0
+        if palabra[0].lower() == letra.lower():
+            return 1 + conteo(letra, palabra[1:])
+        else:
+            return conteo(letra, palabra[1:])
+    palabra = input("Ingrese palabra: ")
+    letra = input("Ingrese letra: ")
+    if len(letra) == 1:
+        cantidad = conteo(letra, palabra)
+        print(f"La cantidad de veces que la letra {letra} aparece en la palabra {palabra} es: {cantidad}")
+    else:
+        print("Error")
