@@ -33,3 +33,5 @@ elif opcion == "2":
             return 1
         else:
             return num + naturales(num-1)
+    num = int(input("Ingrese numero: "))
+    print(naturales(num))
