@@ -19,3 +19,11 @@ print(potencia(base, exponente))
 """
 
 print("======BIENVENIDO AL MENÚ======")
+print("1. Calcular factorial")
+print("2. Suma números naturales")
+print("3. Calcular Fibonacci")
+print("4. Calcular cantidad de letras")
+print("5. Invertir cadena de texto")
+print("6. Calcular potencia")
+print("7. Salir")
+print("Seleccione una opción")
