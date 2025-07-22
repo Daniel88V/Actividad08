@@ -54,3 +54,13 @@ elif opcion == "4":
             print("Error, por favor ingresa una sola letra")
     cantidad = conteo(letra, palabra)
     print(f"La cantidad de veces que la letra {letra} aparece en la palabra {palabra} es: {cantidad}")
+elif opcion == "5":
+    def invertida(inversion):
+        if len(inversion) <= 1:
+            return inversion
+        else:
+            return inversion[-1] + invertida(inversion[:-1])
+    inversion = input("Ingrese la palabra que desea invertir: ")
+    palabra_invertida = invertida(inversion)
+    print(f"La palabra {inversion} de forma invertida es: {palabra_invertida}")
+elif opcion == "6":
