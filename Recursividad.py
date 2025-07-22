@@ -46,9 +46,11 @@ elif opcion == "4":
         else:
             return conteo(letra, palabra[1:])
     palabra = input("Ingrese palabra: ")
-    letra = input("Ingrese letra: ")
-    if len(letra) == 1:
-        cantidad = conteo(letra, palabra)
-        print(f"La cantidad de veces que la letra {letra} aparece en la palabra {palabra} es: {cantidad}")
-    else:
-        print("Error")
+    while True:
+        letra = input("Ingrese letra: ")
+        if len(letra) == 1:
+            break
+        else:
+            print("Error, por favor ingresa una sola letra")
+    cantidad = conteo(letra, palabra)
+    print(f"La cantidad de veces que la letra {letra} aparece en la palabra {palabra} es: {cantidad}")
