@@ -1,13 +1,4 @@
 """
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n-1)
-n = int(input("Ingrese número: "))
-print(factorial(n))
-"""
-"""
 def potencia (base, exponente):
     if exponente == 0:
         return 1
@@ -27,3 +18,18 @@ print("5. Invertir cadena de texto")
 print("6. Calcular potencia")
 print("7. Salir")
 print("Seleccione una opción")
+opcion = input()
+if opcion == "1":
+    def factorial(n):
+        if n == 0:
+            return 1
+        else:
+            return n * factorial(n - 1)
+    n = int(input("Ingrese número: "))
+    print(factorial(n))
+elif opcion == "2":
+    def naturales(num):
+        if num == 0:
+            return 1
+        else:
+            return num + naturales(num-1)
