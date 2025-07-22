@@ -61,3 +61,6 @@ elif opcion == "6":
     base = int(input("Ingrese base: "))
     exponente = int(input("Ingrese exponente: "))
     print(potencia(base, exponente))
+elif opcion == "7":
+    print("Saliendo del menú...")
+    exit()
