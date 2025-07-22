@@ -1,14 +1,3 @@
-"""
-def potencia (base, exponente):
-    if exponente == 0:
-        return 1
-    else:
-        return base *potencia(base, exponente-1)
-base = int(input("Ingrese base: "))
-exponente = int(input("Ingrese exponente: "))
-print(potencia(base, exponente))
-"""
-
 print("======BIENVENIDO AL MENÚ======")
 print("1. Calcular factorial")
 print("2. Suma números naturales")
@@ -64,3 +53,11 @@ elif opcion == "5":
     palabra_invertida = invertida(inversion)
     print(f"La palabra {inversion} de forma invertida es: {palabra_invertida}")
 elif opcion == "6":
+    def potencia(base, exponente):
+        if exponente == 0:
+            return 1
+        else:
+            return base * potencia(base, exponente - 1)
+    base = int(input("Ingrese base: "))
+    exponente = int(input("Ingrese exponente: "))
+    print(potencia(base, exponente))
