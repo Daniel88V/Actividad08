@@ -30,8 +30,12 @@ if opcion == "1":
 elif opcion == "2":
     def naturales(num):
         if num == 0:
-            return 1
+            return 0
         else:
             return num + naturales(num-1)
     num = int(input("Ingrese numero: "))
     print(naturales(num))
+elif opcion == "3":
+    print("Código en proceso...")
+elif opcion == "4":
+    print()
