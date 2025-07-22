@@ -38,4 +38,6 @@ elif opcion == "2":
 elif opcion == "3":
     print("Código en proceso...")
 elif opcion == "4":
-    print()
+    def conteo(letra, palabra):
+        if palabra == ' ':
+            return 0
